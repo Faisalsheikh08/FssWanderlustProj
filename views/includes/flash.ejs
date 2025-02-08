@@ -1,9 +1,9 @@
-<%if(successMsg&&successMsg.length){%>
+<% if (successMsg && successMsg.length) { %>
 <div
-  class="alert alert-success alert-dismissible fade show col-6 offset-3"
+  class="alert alert-success alert-dismissible fade show text-center w-75 mx-auto"
   role="alert"
 >
-  <%=successMsg%>
+  <%= successMsg %>
   <button
     type="button"
     class="btn-close"
@@ -11,12 +11,12 @@
     aria-label="Close"
   ></button>
 </div>
-<%}%> <%if(errorMsg&&errorMsg.length){%>
+<% } %> <% if (errorMsg && errorMsg.length) { %>
 <div
-  class="alert alert-danger alert-dismissible fade show col-6 offset-3"
+  class="alert alert-danger alert-dismissible fade show text-center w-75 mx-auto"
   role="alert"
 >
-  <%=errorMsg%>
+  <%= errorMsg %>
   <button
     type="button"
     class="btn-close"
@@ -24,4 +24,4 @@
     aria-label="Close"
   ></button>
 </div>
-<%}%>
+<% } %>

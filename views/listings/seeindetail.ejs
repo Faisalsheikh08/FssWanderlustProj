@@ -1,4 +1,30 @@
 <% layout("/layouts/boilerplate")%>
+
+<style>
+  /* Mobile View Adjustments */
+  @media (max-width: 768px) {
+    /* Ensure proper alignment and spacing of rating stars */
+
+    /* Adjust other elements */
+    .col-8.offset-3,
+    .col-6.offset-3,
+    .col-5.ms-3 {
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 1rem;
+    }
+
+    textarea {
+      width: 100% !important;
+    }
+
+    .btn {
+      width: 100% !important;
+      margin-top: 0.5rem;
+    }
+  }
+</style>
+
 <div class="row mt-3">
   <div class="col-8 offset-3">
     <h3>Listing details</h3>

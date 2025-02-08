@@ -3,7 +3,10 @@
   #filters {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
   }
+
   .filter {
     text-align: center;
     margin-right: 1.5rem;
@@ -18,6 +21,25 @@
 
   .filter p {
     font-size: 0.8rem;
+  }
+
+  /* 📱 Mobile View Fix */
+  @media (max-width: 768px) {
+    #filters {
+      display: flex;
+      flex-wrap: nowrap; /* Keep filters in a single row */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent wrapping */
+      padding: 0.5rem;
+      gap: 1rem;
+      justify-content: flex-start; /* Align items properly */
+    }
+
+    .filter {
+      flex: 0 0 auto; /* Prevents filters from stacking */
+      margin: 0 0.5rem; /* Adjust spacing */
+      text-align: center;
+    }
   }
 </style>
 
